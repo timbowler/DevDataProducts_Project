@@ -1,0 +1,41 @@
+---
+title: "Developing Data Products Course Project"
+author: "Tim Bowler"
+date: "May 18, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Iris Dataset K-means Example
+
+This presentation is being created as part of the peer assessment for the Coursera Developing Data Products class.  The assignment's objective is to ensure the following concepts are reinforced:
+
+- Build a data product application in shiny
+- Develop a slide presentation in Rstudio Presenter or Slidify to pitch the application
+
+## The Application
+
+To demonstrate understanding of using **Shiny** to build an application, a simple application called **developing_data_products_project** has been deployed on [shinyapp.io](https://timbowler1.shinyapps.io/developing_data_products_project/)
+
+The appication allows the user to:
+- select the variable inputs to be used in constructing a k-means clustering graph
+- select the number of clusters to plot
+
+This application was developed and minimally tweaked by referring to the example at the Rstudio Shiny [Gallery](http://shiny.rstudio.com/gallery/)
+
+## The Data
+
+This application is based on the Iris dataset is the base R package.
+
+This famous iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica.
+
+Source code for the project is available on [GitHub](https://github.com/timbowler/DevDataProducts_Project)
+
+## Data
+
+```{r code, comment = "", echo = TRUE, eval = TRUE}
+head(iris)
+```
